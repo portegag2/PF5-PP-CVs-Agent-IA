@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@layer components {
+  .cv-container {
+    @apply max-w-[21cm] mx-auto p-6;
+  }
+
+  .section-title {
+    @apply text-xl font-bold mb-4;
+  }
+
+  .section-content {
+    @apply text-gray-600;
+  }
+
+  .experience-item {
+    @apply border-l-2 pl-4 mb-6;
+  }
+
+  .education-item {
+    @apply border-l-2 pl-4 mb-6;
+  }
+
+  .skill-item {
+    @apply p-4 border rounded-lg;
+  }
+
+  .progress-bar {
+    @apply w-full bg-gray-200 rounded-full h-2;
+  }
+
+  .progress-fill {
+    @apply h-2 rounded-full;
+  }
+}

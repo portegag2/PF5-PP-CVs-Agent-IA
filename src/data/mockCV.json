@@ -1,0 +1,79 @@
+{
+  "personalInfo": {
+    "name": "Pedro García",
+    "email": "pedro.garcia@example.com",
+    "phone": "+34 612 345 678",
+    "location": "Madrid, Spain",
+    "linkedin": "linkedin.com/in/pedro-garcia",
+    "github": "github.com/pedro-garcia"
+  },
+  "profile": "Enthusiastic software developer with a passion for creating innovative solutions and learning new technologies.",
+  "experiences": [
+    {
+      "title": "Senior Frontend Developer",
+      "company": "Tech Company",
+      "startDate": "2022-01",
+      "endDate": "Present",
+      "description": [
+        "Developed scalable web applications using React and TypeScript",
+        "Implemented responsive designs with Tailwind CSS",
+        "Led a team of developers in agile methodology",
+        "Optimized application performance and user experience"
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "Startup",
+      "startDate": "2020-06",
+      "endDate": "2021-12",
+      "description": [
+        "Built and maintained web applications",
+        "Implemented CI/CD pipelines",
+        "Collaborated with designers and backend developers"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Master in Computer Science",
+      "institution": "University of Madrid",
+      "startDate": "2018-09",
+      "endDate": "2020-06",
+      "description": [
+        "Specialization in Web Development",
+        "Graduated with honors"
+      ]
+    },
+    {
+      "title": "Bachelor in Computer Engineering",
+      "institution": "University of Barcelona",
+      "startDate": "2014-09",
+      "endDate": "2018-06",
+      "description": [
+        "Specialization in Software Engineering"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "React",
+      "level": "Advanced",
+      "description": "5+ years of experience building complex web applications"
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "description": "Strong understanding of type system and best practices"
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": "Advanced",
+      "description": "Expert in creating beautiful and responsive designs"
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "description": "Experience with GitFlow and feature branching"
+    }
+  ]
+}

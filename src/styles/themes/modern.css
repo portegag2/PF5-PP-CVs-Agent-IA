@@ -1,0 +1,49 @@
+@layer components {
+  .cv-container {
+    @apply bg-gray-50;
+  }
+
+  .section-title {
+    @apply text-blue-800;
+  }
+
+  .section-content {
+    @apply text-gray-800;
+  }
+
+  .experience-item {
+    @apply border-l-blue-200;
+  }
+
+  .education-item {
+    @apply border-l-blue-200;
+  }
+
+  .skill-item {
+    @apply border-blue-200;
+  }
+
+  .progress-bar {
+    @apply bg-blue-100;
+  }
+
+  .progress-fill {
+    @apply bg-blue-500;
+  }
+
+  .personal-info {
+    @apply space-y-4;
+  }
+
+  .personal-photo {
+    @apply w-32 h-32 rounded-full object-cover;
+  }
+
+  .personal-name {
+    @apply text-2xl font-bold mt-4 text-blue-800;
+  }
+
+  .personal-contact {
+    @apply text-blue-600;
+  }
+}

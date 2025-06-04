@@ -1,0 +1,40 @@
+{
+  "personalInfo": {
+    "name": "",
+    "email": "",
+    "phone": "",
+    "location": "",
+    "linkedin": "",
+    "github": ""
+  },
+  "profile": "",
+  "experiences": [
+    {
+      "title": "",
+      "company": "",
+      "startDate": "",
+      "endDate": "",
+      "description": [
+        ""
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "",
+      "institution": "",
+      "startDate": "",
+      "endDate": "",
+      "description": [
+        ""
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "",
+      "level": "Advanced",
+      "description": ""
+    }
+  ]
+}

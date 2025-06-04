@@ -12,11 +12,11 @@
   }
 
   .experience-item {
-    @apply border-l-blue-200;
+    @apply border-l-2 border-blue-200;
   }
 
   .education-item {
-    @apply border-l-blue-200;
+    @apply border-l-2 border-blue-200;
   }
 
   .skill-item {

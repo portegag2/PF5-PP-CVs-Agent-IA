@@ -9,22 +9,22 @@ export const PersonalInfo: React.FC<PersonalInfoProps> = ({ info }) => {
   return (
     <div className="personal-info">
       <div className="flex flex-col items-center mb-6">
-        <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
-          {info.foto && <img src={info.foto} alt="Foto de perfil" className="w-full h-full object-cover" />}
+        <div className="personal-photo">
+          {info.foto && <img src={info.foto} alt="Foto de perfil" />}
         </div>
-        <h2 className="text-2xl font-bold mb-2">{info.nombre}</h2>
+        <h2 className="personal-name">{info.nombre}</h2>
         <p className="text-gray-600">{info.ciudad}</p>
       </div>
       <div className="contact-info space-y-4">
         <p className="flex items-center">
           <span className="mr-2">Email:</span>
-          <a href={`mailto:${info.email}`} className="text-blue-600 hover:text-blue-800">
+          <a href={`mailto:${info.email}`} className="contact-link">
             {info.email}
           </a>
         </p>
         <p className="flex items-center">
           <span className="mr-2">Teléfono:</span>
-          <a href={`tel:${info.telefono}`} className="text-blue-600 hover:text-blue-800">
+          <a href={`tel:${info.telefono}`} className="contact-link">
             {info.telefono}
           </a>
         </p>

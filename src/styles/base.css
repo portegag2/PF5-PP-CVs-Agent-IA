@@ -10,7 +10,13 @@
 
 @layer components {
   .cv-container {
-    @apply max-w-[21cm] mx-auto p-6;
+    @apply max-w-2xl mx-auto p-6;
+  }
+
+  @media (min-width: 1280px) {
+    .cv-container {
+      max-width: 21cm;
+    }
   }
 
   .section-title {

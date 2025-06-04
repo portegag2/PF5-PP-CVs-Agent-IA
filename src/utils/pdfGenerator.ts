@@ -1,4 +1,4 @@
-import htmlToImage from 'html-to-image';
+import * as htmlToImage from 'html-to-image';
 import { jsPDF } from 'jspdf';
 
 interface GeneratePDFOptions {

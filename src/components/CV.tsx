@@ -16,7 +16,7 @@ export const CV: React.FC = () => {
       <div className={themeClass} ref={cvRef}>
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold">Curriculum Vitae</h1>
-          <DownloadButton cvElement={cvRef.current as HTMLDivElement} />
+          <DownloadButton cvRef={cvRef} />
         </div>
         <div className="space-y-8">
           <PersonalInfo info={cv.datos_personales} />

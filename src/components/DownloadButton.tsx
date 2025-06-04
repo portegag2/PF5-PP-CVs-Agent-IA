@@ -1,23 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useCVStore } from '../store/cvStore';
 import { generatePDF } from '../utils/pdfGenerator';
 
 interface DownloadButtonProps {
-  cvElement: HTMLElement;
+  cvRef: React.RefObject<HTMLDivElement | null>;
 }
 
-export const DownloadButton: React.FC<DownloadButtonProps> = ({ cvElement }) => {
+export const DownloadButton: React.FC<DownloadButtonProps> = ({ cvRef }) => {
   const { selectedTheme } = useCVStore();
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    if (cvRef.current) {
+      setIsLoading(false);
+    }
+  }, [cvRef]);
 
   const handleDownload = async () => {
+    if (!cvRef.current) {
+      console.error('CV element not found');
+      return;
+    }
+
+    setIsLoading(true);
     try {
       await generatePDF({
-        element: cvElement,
+        element: cvRef.current,
         filename: `curriculum-${selectedTheme}.pdf`,
         quality: 0.92
       });
     } catch (error) {
       console.error('Error downloading PDF:', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 

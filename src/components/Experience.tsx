@@ -11,14 +11,14 @@ export const Experience: React.FC<ExperienceProps> = ({ experiencias }) => {
   }
 
   return (
-    <div className="space-y-6">
-      {experiencias.map((exp, index) => (
+    <div className="experience-section">
+      <h3 className="section-title">Experiencia Laboral</h3>
+      {experiencias.map((experiencia, index) => (
         <div key={index} className="experience-item">
-          <h3 className="section-title">{exp.titulo}</h3>
-          <p className="section-content">
-            <span className="font-bold">{exp.entidad}</span> - {exp.fecha}
-          </p>
-          <p className="section-content">{exp.descripcion}</p>
+          <h4 className="text-lg font-semibold mb-2">{experiencia.titulo}</h4>
+          <p className="text-gray-600 mb-2">{experiencia.entidad}</p>
+          <p className="date">{experiencia.fecha}</p>
+          <p className="description">{experiencia.descripcion}</p>
         </div>
       ))}
     </div>

@@ -1,79 +1,54 @@
 {
-  "personalInfo": {
-    "name": "Pedro García",
+  "datos_personales": {
+    "nombre": "Pedro García",
+    "rol_profesional": "Desarrollador Frontend Senior",
+    "fecha_nacimiento": "1990-01-01",
+    "ciudad": "Madrid, España",
+    "telefono": "+34 612 345 678",
     "email": "pedro.garcia@example.com",
-    "phone": "+34 612 345 678",
-    "location": "Madrid, Spain",
-    "linkedin": "linkedin.com/in/pedro-garcia",
-    "github": "github.com/pedro-garcia"
+    "foto": null
   },
-  "profile": "Enthusiastic software developer with a passion for creating innovative solutions and learning new technologies.",
-  "experiences": [
+  "perfil_profesional": "Desarrollador frontend apasionado por crear soluciones innovadoras y aprender nuevas tecnologías.",
+  "experiencia_laboral": [
     {
-      "title": "Senior Frontend Developer",
-      "company": "Tech Company",
-      "startDate": "2022-01",
-      "endDate": "Present",
-      "description": [
-        "Developed scalable web applications using React and TypeScript",
-        "Implemented responsive designs with Tailwind CSS",
-        "Led a team of developers in agile methodology",
-        "Optimized application performance and user experience"
-      ]
+      "titulo": "Senior Frontend Developer",
+      "entidad": "Tech Company",
+      "fecha": "2022-01 - Present",
+      "descripcion": "Desarrollo de aplicaciones web escalables usando React y TypeScript. Implementación de diseños responsive con Tailwind CSS. Liderazgo de equipo de desarrolladores en metodología ágil. Optimización del rendimiento y experiencia de usuario."
     },
     {
-      "title": "Frontend Developer",
-      "company": "Startup",
-      "startDate": "2020-06",
-      "endDate": "2021-12",
-      "description": [
-        "Built and maintained web applications",
-        "Implemented CI/CD pipelines",
-        "Collaborated with designers and backend developers"
-      ]
+      "titulo": "Frontend Developer",
+      "entidad": "Startup",
+      "fecha": "2020-06 - 2021-12",
+      "descripcion": "Desarrollo y mantenimiento de aplicaciones web. Implementación de pipelines CI/CD. Colaboración con diseñadores y desarrolladores backend."
     }
   ],
-  "education": [
+  "formacion": [
     {
-      "title": "Master in Computer Science",
-      "institution": "University of Madrid",
-      "startDate": "2018-09",
-      "endDate": "2020-06",
-      "description": [
-        "Specialization in Web Development",
-        "Graduated with honors"
-      ]
+      "titulo": "Master en Ciencias de la Computación",
+      "entidad": "Universidad de Madrid",
+      "fecha": "2018-09 - 2020-06",
+      "descripcion": "Especialización en Desarrollo Web. Graduado con honores."
     },
     {
-      "title": "Bachelor in Computer Engineering",
-      "institution": "University of Barcelona",
-      "startDate": "2014-09",
-      "endDate": "2018-06",
-      "description": [
-        "Specialization in Software Engineering"
-      ]
+      "titulo": "Licenciatura en Ingeniería Informática",
+      "entidad": "Universidad de Barcelona",
+      "fecha": "2014-09 - 2018-06",
+      "descripcion": "Especialización en Ingeniería de Software."
     }
   ],
-  "skills": [
+  "habilidades_tecnicas": {
+    "lenguaje programación": "React, TypeScript, JavaScript",
+    "herramientas": "Tailwind CSS, Git, CI/CD"
+  },
+  "idiomas": [
     {
-      "name": "React",
-      "level": "Advanced",
-      "description": "5+ years of experience building complex web applications"
+      "idioma": "Español",
+      "nivel": "Nativo"
     },
     {
-      "name": "TypeScript",
-      "level": "Advanced",
-      "description": "Strong understanding of type system and best practices"
-    },
-    {
-      "name": "Tailwind CSS",
-      "level": "Advanced",
-      "description": "Expert in creating beautiful and responsive designs"
-    },
-    {
-      "name": "Git",
-      "level": "Advanced",
-      "description": "Experience with GitFlow and feature branching"
+      "idioma": "Inglés",
+      "nivel": "Avanzado"
     }
   ]
 }

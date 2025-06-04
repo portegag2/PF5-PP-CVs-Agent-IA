@@ -11,8 +11,8 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <div className="fixed top-4 right-4 z-50 flex gap-4">
+    <div id="app-container" className="min-h-screen bg-gray-100">
+      <div id="theme-selector" className="fixed top-4 right-4 z-50 flex gap-4">
         <button
           onClick={toggleTheme}
           className="px-4 py-2 rounded-md font-medium transition-colors"

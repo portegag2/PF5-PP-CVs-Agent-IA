@@ -8,34 +8,21 @@ interface PersonalInfoProps {
 export const PersonalInfo: React.FC<PersonalInfoProps> = ({ info }) => {
   return (
     <div className="personal-info">
-      <div className="flex flex-col items-center mb-6">
-        <div className="personal-photo">
-          {info.foto && <img src={info.foto} alt="Foto de perfil" />}
+      <div className="flex items-start">
+        <div style={{ width: '8rem', height: '11rem' }}>
+          {info.foto && <img src={info.foto} alt={info.nombre} style={{ width: '100%', height: '100%' }} />}
         </div>
-        <h2 className="personal-name">{info.nombre}</h2>
-        <p className="text-gray-600">{info.ciudad}</p>
-      </div>
-      <div className="contact-info space-y-4">
-        <p className="flex items-center">
-          <span className="mr-2">Email:</span>
-          <a href={`mailto:${info.email}`} className="contact-link">
-            {info.email}
-          </a>
-        </p>
-        <p className="flex items-center">
-          <span className="mr-2">Teléfono:</span>
-          <a href={`tel:${info.telefono}`} className="contact-link">
+        <div className="ml-6 flex flex-col gap-1 text-left text-sm">
+          <span className="font-semibold">{info.nombre}</span>
+          <span>{info.fecha_nacimiento}</span>
+          <span>{info.ciudad}</span>
+          <a href={`tel:${info.telefono}`} className="hover:underline">
             {info.telefono}
           </a>
-        </p>
-        <p className="flex items-center">
-          <span className="mr-2">Fecha de nacimiento:</span>
-          <span className="text-gray-600">{info.fecha_nacimiento}</span>
-        </p>
-        <p className="flex items-center">
-          <span className="mr-2">Rol profesional:</span>
-          <span className="text-gray-600">{info.rol_profesional}</span>
-        </p>
+          <a href={`mailto:${info.email}`} className="hover:underline">
+            {info.email}
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'print': { 'raw': 'print' },
+        'pdf': { 'raw': 'screen and (max-width: 1px)' },
+      },
       colors: {
         classic: {
           primary: '#2c3e50',

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { CV } from './components/CV';
 import { useCVStore } from './store/cvStore';
+import { Header } from './components/Header';
 import './App.css';
 
 function App() {
@@ -10,17 +11,12 @@ function App() {
     setSelectedTheme(selectedTheme === 'classic' ? 'modern' : 'classic');
   };
 
+  const cvRef = useRef<HTMLDivElement>(null);
+
   return (
     <div id="app-container" className="min-h-screen bg-gray-100">
-      <div id="theme-selector" className="fixed top-4 right-4 z-50 flex gap-4">
-        <button
-          onClick={toggleTheme}
-          className="px-4 py-2 rounded-md font-medium transition-colors"
-        >
-          {selectedTheme === 'classic' ? 'Tema Moderno' : 'Tema Clásico'}
-        </button>
-      </div>
-      <CV />
+      <Header selectedTheme={selectedTheme} toggleTheme={toggleTheme} cvRef={cvRef} />
+      <CV cvRef={cvRef} />
     </div>
   );
 }

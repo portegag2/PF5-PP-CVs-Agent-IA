@@ -10,8 +10,8 @@ export const PersonalInfo: React.FC<PersonalInfoProps> = ({ info }) => {
     <div className="personal-info">
       <div className="flex items-start">
         <div style={{
-          width: '8rem',
-          height: '11rem',
+          width: '5.76rem',
+          height: '7.92rem',
           borderRadius: '50%',
           overflow: 'hidden'
         }}>

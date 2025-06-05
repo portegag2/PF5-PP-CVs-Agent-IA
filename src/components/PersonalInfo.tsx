@@ -9,7 +9,12 @@ export const PersonalInfo: React.FC<PersonalInfoProps> = ({ info }) => {
   return (
     <div className="personal-info">
       <div className="flex items-start">
-        <div style={{ width: '8rem', height: '11rem' }}>
+        <div style={{
+          width: '8rem',
+          height: '11rem',
+          borderRadius: '50%',
+          overflow: 'hidden'
+        }}>
           {info.foto && <img src={info.foto} alt={info.nombre} style={{ width: '100%', height: '100%' }} />}
         </div>
         <div className="ml-6 flex flex-col gap-1 text-left text-sm">

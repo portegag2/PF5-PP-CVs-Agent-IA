@@ -1,0 +1,16 @@
+/* Global styles for consistent spacing */
+.section + .section {
+  margin-top: 2rem;
+}
+
+/* Print-specific adjustments */
+@media print {
+  .section + .section {
+    margin-top: 1.5rem;
+  }
+  
+  body, html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

@@ -21,9 +21,9 @@ export const Experience: React.FC<ExperienceProps> = ({ experiencias }) => {
                 <p className="font-semibold text-gray-800">{experiencia.titulo}</p>
                 <p className="text-sm text-gray-500 italic">{experiencia.fecha}</p>
               </div>
-              <p className="text-gray-600">{experiencia.entidad}</p>
+              <p className="text-gray-600 text-sm italic text-right">{experiencia.entidad}</p>
             </div>
-            <p className="text-gray-600">{experiencia.descripcion}</p>
+            <p className="text-gray-600 w-full">{experiencia.descripcion}</p>
           </div>
         ))}
       </div>

@@ -7,9 +7,9 @@ interface PersonalInfoProps {
 
 export const PersonalInfo: React.FC<PersonalInfoProps> = ({ info }) => {
   return (
-    <div className="personal-info">
-      <div className="flex items-start">
-        <div style={{
+    <div id="personal-info-container" className="personal-info">
+      <div id="personal-info-flex" className="flex items-start">
+        <div id="personal-info-image-container" style={{
           width: '5.76rem',
           height: '7.92rem',
           borderRadius: '50%',
@@ -17,7 +17,7 @@ export const PersonalInfo: React.FC<PersonalInfoProps> = ({ info }) => {
         }}>
           {info.foto && <img src={info.foto} alt={info.nombre} style={{ width: '100%', height: '100%' }} />}
         </div>
-        <div className="ml-6 flex flex-col gap-1 text-left text-sm">
+        <div id="personal-info-content" className="ml-3 flex flex-col gap-0.2 text-left text-xs self-end">
           <span className="font-semibold">{info.nombre}</span>
           <span>{info.fecha_nacimiento}</span>
           <span>{info.ciudad}</span>

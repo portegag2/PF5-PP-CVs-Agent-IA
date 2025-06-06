@@ -7,16 +7,26 @@
     @apply text-xl font-semibold text-gray-800 mb-4;
   }
 
+  .profile-section {
+    @apply pt-2 border-t-4 border-blue-500 w-full block;
+  }
+
+  .experience-item,
+  .education-item,
+  .skills-section {
+    @apply w-full block;
+  }
+
   .section-content {
     @apply text-gray-600;
   }
 
   .experience-item {
-    @apply pl-4 mb-6;
+    @apply pl-4 mb-6 mt-4;
   }
 
   .education-item {
-    @apply pl-4 mb-6;
+    @apply pl-4 mb-6 mt-4;
   }
 
   .personal-info {
@@ -48,7 +58,7 @@
   }
 
   .skills-section {
-    @apply space-y-4;
+    @apply space-y-4 mt-4;
   }
 
   .skills-list {

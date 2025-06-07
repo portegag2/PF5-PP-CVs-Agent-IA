@@ -23,7 +23,7 @@ export const Experience: React.FC<ExperienceProps> = ({ experiencias }) => {
               </div>
               <p className="text-gray-600 text-sm italic text-right">{experiencia.entidad}</p>
             </div>
-            <p className="text-gray-600 w-full text-justify">{experiencia.descripcion}</p>
+            <p className="text-gray-600 w-full text-justify leading-normal">{experiencia.descripcion}</p>
           </div>
         ))}
       </div>

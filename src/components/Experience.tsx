@@ -16,15 +16,16 @@ export const Experience: React.FC<ExperienceProps> = ({ experiencias }) => {
       <div className="space-y-4">
         {experiencias.map((experiencia, index) => (
           <div key={index}>
-            <div className="flex justify-between items-baseline mb-1">
+            <div className="flex justify-between items-baseline">
               <div className="flex flex-wrap items-baseline">
                 <p className="font-semibold text-gray-800">{experiencia.titulo} </p>
                 {/* <p className="text-sm text-gray-500 italic">{experiencia.fecha}</p> */}
               </div>
               <p className="text-black text-sm italic text-right ml-4">{experiencia.entidad}</p>
             </div>
-            <ul className="list-disc list-inside ml-8">
-              <li className="text-gray-600 text-sm text-justify leading-normal">{experiencia.descripcion}</li>
+            <p className="text-sm text-gray-500 italic">{experiencia.fecha}</p>
+            <ul className="list-inside ml-8">
+              <li className="list-disc text-gray-600 text-sm text-justify leading-normal">{experiencia.descripcion}</li>
             </ul>
           </div>
         ))}

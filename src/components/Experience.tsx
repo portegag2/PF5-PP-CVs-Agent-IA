@@ -19,11 +19,13 @@ export const Experience: React.FC<ExperienceProps> = ({ experiencias }) => {
             <div className="flex justify-between items-baseline mb-1">
               <div className="flex flex-wrap items-baseline">
                 <p className="font-semibold text-gray-800">{experiencia.titulo} </p>
-                <p className="text-sm text-gray-500 italic">{experiencia.fecha}</p>
+                {/* <p className="text-sm text-gray-500 italic">{experiencia.fecha}</p> */}
               </div>
-              <p className="text-gray-600 text-sm italic text-right ml-4">{experiencia.entidad}</p>
+              <p className="text-black text-sm italic text-right ml-4">{experiencia.entidad}</p>
             </div>
-            <p className="text-gray-600 w-full text-justify leading-normal">{experiencia.descripcion}</p>
+            <ul className="list-disc list-inside ml-8">
+              <li className="text-gray-600 text-sm text-justify leading-normal">{experiencia.descripcion}</li>
+            </ul>
           </div>
         ))}
       </div>
